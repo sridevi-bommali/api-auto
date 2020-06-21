@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "07e90267-9164-4e0b-b752-20d5ea939cba",
+		"name": "Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET list of all To-Dos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "GET a specific To-Do",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/todos/25"
+			},
+			"response": []
+		},
+		{
+			"name": "POST a To-Do",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"foo\",\r\n\"body\": \"bar\",\r\n\"id\": 203\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://jsonplaceholder.typicode.com/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT a To-Do",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\": \"foo\",\r\n\"body\": \"bar\",\r\n\"id\": 25\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://jsonplaceholder.typicode.com/todos/25"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE a To-Do",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://jsonplaceholder.typicode.com/todos/25"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
