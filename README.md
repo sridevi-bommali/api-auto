@@ -6,70 +6,45 @@ I have created a Test Suite that tests all the below API’s using BDD(Cucumber/
 
 Tools & Technologies:
 
-Eclipse
-Maven
-Rest Assured dependencies
-Cucumber
-Selenium
+1.Rest Assured 
+2.Cucumber
+3.IntelliJ
+4.Java
+5.postman 
 
 Step 1:
 
-In order to create Maven Project File -> New -> other -> Maven Project and choose defaults and give name for our project “ClearPoint_RestAssured_BDD”
 
-Step 2:
+Create New Project in IntelliJ and convert it into Maven Project
 
-Add all the required dependency
- 
-•	Rest Assured
-•	Json-schema-validator
-•	Json-path
-•	Xml-path
-•	Testng
-•	Java-hamcrest
-•	Hamcrest-library
-•	Cucumber-java
-•	Cucumber-junit
+Step 2: 
 
-Step 3:
+Add required dependency in pom.xml file
 
-Add all the dependency in pom.xml from Maven Repository. You can find pom.xml file if we expand our project
+Step3:
 
-Step 4:
+Under Test - Java
 
-Create a Feature file with .feature extension under Resources, features
-
-Inside the feature file write scenarios for each API and save the file
+Create Feature package under which Feature files are created 
+Create Step Definition package under which Java Class files are created
 
 Step 5:
 
-Create a new package where you will have step definition files 
+Under Main – Java
 
-Create Step Definition for each API with .java extension under created package
+Create a helper package under which “ToDoHelper” java class file is created functions of Get, Put, Post and delete are written.
 
-Step definitions should be created in accordance with feature file
+These functions are called in step definition file.
 
 Step 6:
 
-Then create a runner file where our scenarios are executed so that they call the step definition and execute our test
+Write Scenarios in Feature file and Step definitions for each scenario get created automatically 
 
-We can run smoke test , regression test , different tests here. We can choose which scenario to be executed for which test using Tags
+We can copy the step definition skeleton created by feature file and use it in step definition file and customize our code to execute the Get operation.
 
-We can create more scenarios based on understanding of underlying error messages of the API like 500,404 etc.
+When we execute it will return result as 5 scenarios passed
 
-We can also 
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 Task: 
 
 1.	Write a test scenario or several scenarios using BDD (Cucumber/Gherkin) and implementation on any language you like to test an API.
